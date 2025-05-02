@@ -1,569 +1,158 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Mermaid Visualizer: Empowering holistic growth marketing with innovative visualization tools. Drive engagement, optimize strategies, and achieve sustainable success.">
-    <title>Mermaid Visualizer | Holistic Growth Marketing</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdn.jsdelivr.net/npm/accessibility@3.0.1/dist/ibility.min.js"></script>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <script src="https://cdn.jsdelivr.net/npm/mermaid@10.9.1/dist/mermaid.min.js"></script>
-    <style>
-        .material-symbols-outlined {
-            font-variation-settings:
-            'FILL' 0,
-            'GRAD' 0,
-            'opsz' 24
-        }
-        body {
-            font-family: 'Roboto', sans-serif;
-        }
-        .high-contrast {
-            filter: contrast(150%);
-        }
-        .mermaid-diagram {
-            display: flex;
-            justify-content: center;
-            margin: 1.5rem 0;
-        }
-    </style>
-</head>
-<body class="bg-gray-50 relative">
-    <!-- Accessibility Widget -->
-    <div id="a11yWidget" class="fixed bottom-4 right-4 z-50">
-        <button class="relative">
-            <button id="toggleA11y" class="bg-indigo-600 text-white p-3 rounded-full shadow-xl hover:bg-indigo-700 transition-colors focus:ring-4 focus:ring-indigo-300 shadow-lg transition-all">
-                <span class="material-symbols-outlined">accessibility_new</span>
-            </button>
-            <div id="a11yPanel" class="hidden absolute bottom-full right-0 mb-4 w-72 bg-white rounded-xl shadow-xl overflow-hidden">
-                <h3 class="bg-gray-100 text-lg font-semibold p-4 bg-gradient-to-r from-indigo-600 to-purple-600 text-white">Accessibility</h3>
-                <div class="p-4 space-y-4 max-h-screen">
-                    <div>
-                        <h4 class="text-sm font-semibold mb-2">Visual Assistance</h4>
-                        <div class="space-x-2">
-                            <button data-mode="grayscale" class="text-xs bg-gray-100 hover:bg-gray-200 rounded px-2 py-1.5">Grayscale</button>
-                            <button data-mode="highContrast" class="text-xs bg-gray-100 hover:bg-gray-200 rounded px-2 py-1.5">High Contrast</button>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="mt-4">
-                            <label class="text-sm block mb-1 text-gray-600">Text Size</label>
-                            <input type="range" min="100" max="200" value="100" class="w-full" />
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-semibold mb-1">Cognitive Assistance</h4>
-                        <div class="space-x-2">
-                            <button data-mode="readingGuide" class="text-xs bg-gray-100 hover:bg-gray-200 rounded px-2 py-1.5">Reading Guide</button>
-                            <button data-mode="simplifier" class="text-xs bg-gray-100 hover:bg-gray-200 rounded px-2 py-1.5">Simpler Text</button>
-                        </div>
-                    </div>
-                    <div>
-                        <h4 class="text-sm font-semibold mb-1">Seizure Safety</h4>
-                        <div>
-                            <p class="text-xs text-gray-600 mb-2">Reduce animations and additional risk</p>
-                            <button data-mode="reduceMotion" class="text-xs bg-gray-100 hover:bg-gray-200 rounded px-2 py-1.5">Reduce Animation</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </button>
-    </div>
-
-    <header class="bg-gradient-to-r from-indigo-600 to-purple-600 text-white">
-        <div class="container mx-auto px-6 py-16 text-center">
-            <span class="material-symbols-outlined text-5xl mb-4">rocket_launch</span>
-            <h1 class="text-4xl md:text-5xl font-bold mb-4">🚀 Mermaid Visualizer</h1>
-            <p class="text-xl md:text-2xl mb-8">Real-Time Marketing Intelligence That Drives Strategic Growth</p>
-            <div class="max-w-3xl mx-auto bg-white/10 backdrop-blur-sm rounded-xl p-6">
-                <p class="text-lg">Every marketing dollar counts. Stop guessing and start knowing—with a centralized dashboard built for marketers who demand performance, precision, and profitability.</p>
-            </div>
+<div class="embed">
+    <header>
+        <div class="container">
+            <h1>🚀 Marketing Dashboard</h1>
+            <p>Real-Time Marketing Intelligence That Drives Strategic Growth. Stop guessing and start knowing—with a centralized dashboard built for marketers who demand performance, precision, and profitability.</p>
         </div>
     </header>
 
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">At Holistic Growth Marketing</h2>
-                <p class="text-gray-600 text-lg">Our Mermaid Visualizer gives you a command center for everything marketing. From traffic trends to ad spend ROI, we make your campaigns more intelligent and your decisions more confident.</p>
-            </div>
-            
-            <div class="grid md:grid-cols-2 gap-8 mb-16">
-                <div class="bg-indigo-50 p-6 rounded-xl">
-                    <span class="material-symbols-outlined text-indigo-600 text-4xl mb-4">insights</span>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Unified Marketing Intelligence</h3>
-                    <p class="text-gray-600">View all your marketing KPIs in one place—leads, conversions, campaign performance, and multi-channel ROI.</p>
+    <section class="section">
+        <div class="container">
+            <h2>Key Benefits</h2>
+            <div class="benefits-grid">
+                <div class="card">
+                    <h3>Unified Intelligence</h3>
+                    <p>View all your marketing KPIs in one place—leads, conversions, campaign performance, and multi-channel ROI.</p>
                 </div>
-                <div class="bg-purple-50 p-6 rounded-xl">
-                    <span class="material-symbols-outlined text-purple-600 text-4xl mb-4">flash_on</span>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Instant Strategy Adjustments</h3>
-                    <p class="text-gray-600">Detect underperforming channels or high-ROI opportunities instantly and pivot in real time.</p>
+                <div class="card">
+                    <h3>Instant Strategy Adjustments</h3>
+                    <p>Detect underperforming channels or high-ROI opportunities instantly and pivot in real time.</p>
                 </div>
-                <div class="bg-blue-50 p-6 rounded-xl">
-                    <span class="material-symbols-outlined text-blue-600 text-4xl mb-4">trending_up</span>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Attribution Clarity</h3>
-                    <p class="text-gray-600">Know what works—and what doesn't—with attribution insights across SEO, paid media, email, and more.</p>
+                <div class="card">
+                    <h3>Attribution Clarity</h3>
+                    <p>Know what works—and what doesn’t—with attribution insights across SEO, paid media, email, and more.</p>
                 </div>
-                <div class="bg-green-50 p-6 rounded-xl">
-                    <span class="material-symbols-outlined text-green-600 text-4xl mb-4">summarize</span>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Stakeholder Reporting</h3>
-                    <p class="text-gray-600">Create presentation-ready reports with one click. No more time wasted gathering data from scattered sources.</p>
+                <div class="card">
+                    <h3>Stakeholder Reporting</h3>
+                    <p>Create presentation-ready reports with one click. No more time wasted gathering data.</p>
                 </div>
-                <div class="bg-amber-50 p-6 rounded-xl">
-                    <span class="material-symbols-outlined text-amber-600 text-4xl mb-4">timeline</span>
-                    <h3 class="text-xl font-semibold mb-3 text-gray-800">Forecasting Tools</h3>
-                    <p class="text-gray-600">Predict your next move with trend forecasting overlays based on your historical performance.</p>
+                <div class="card">
+                    <h3>Forecasting Tools</h3>
+                    <p>Predict your next move with trend forecasting overlays based on historical performance.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">📊 Dashboard Ecosystem</h2>
-            <p class="text-center text-gray-600 max-w-3xl mx-auto mb-16">One Interface. Every Department. Seamless Intelligence Across Teams.<br>Our Business Dashboard Suite is built for real-time, data-driven decision-making across your entire operation.</p>
-            
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-center mb-4">
-                        <span class="material-symbols-outlined bg-indigo-100 text-indigo-600 p-2 rounded-lg mr-4">monitoring</span>
-                        <h3 class="text-xl font-semibold text-gray-800">Business Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-4">A unified command center for cross-departmental clarity and strategic insights.</p>
-                </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-center mb-4">
-                        <span class="material-symbols-outlined bg-purple-100 text-purple-600 p-2 rounded-lg mr-4">campaign</span>
-                        <h3 class="text-xl font-semibold text-gray-800">Marketing Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-2">Track across all channels:</p>
-                    <ul class="text-gray-600 text-sm space-y-1 pl-4">
-                        <li>• Website traffic analytics</li>
-                        <li>• Ad spend performance</li>
-                        <li>• Conversion rate tracking</li>
-                        <li>• Channel-specific ROI</li>
+    <section class="section">
+        <div class="container">
+            <h2>Dashboard Ecosystem</h2>
+            <p style="text-align: center; margin-bottom: 30px;">One Interface. Every Department. Seamless Intelligence Across Teams.</p>
+            <div class="dashboard-grid">
+                <div class="card">
+                    <h3>🧭 Business Dashboard</h3>
+                    <ul>
+                        <li>Cross-departmental clarity</li>
+                        <li>Monitor performance at every level</li>
+                        <li>Strategic insights across organization</li>
                     </ul>
                 </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-center mb-4">
-                        <span class="material-symbols-outlined bg-blue-100 text-blue-600 p-2 rounded-lg mr-4">bar_chart</span>
-                        <h3 class="text-xl font-semibold text-gray-800">Sales Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-2">Revenue visibility:</p>
-                    <ul class="text-gray-600 text-sm space-y-1 pl-4">
-                        <li>• Total sales & revenue</li>
-                        <li>• Conversion rates by stage</li>
-                        <li>• Forecasting & tracking</li>
-                        <li>• Team performance</li>
+                <div class="card">
+                    <h3>💼 Marketing Dashboard</h3>
+                    <ul>
+                        <li>Campaign metrics & lead funnels</li>
+                        <li>Traffic sources & cost-per-lead</li>
+                        <li>SEO, PPC, Email, Social insights</li>
                     </ul>
                 </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-center mb-4">
-                        <span class="material-symbols-outlined bg-green-100 text-green-600 p-2 rounded-lg mr-4">send</span>
-                        <h3 class="text-xl font-semibold text-gray-800">Outreach Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-2">Measure impact:</p>
-                    <ul class="text-gray-600 text-sm space-y-1 pl-4">
-                        <li>• Email engagement</li>
-                        <li>• Follow-up tracking</li>
-                        <li>• Outreach-to-close funnel</li>
-                        <li>• Lead nurturing</li>
+                <div class="card">
+                    <h3>💰 Sales Dashboard</h3>
+                    <ul>
+                        <li>Sales & revenue trends</li>
+                        <li>Conversion rates by stage</li>
+                        <li>Team performance benchmarking</li>
                     </ul>
                 </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-center mb-4">
-                        <span class="material-symbols-outlined bg-amber-100 text-amber-600 p-2 rounded-lg mr-4">share</span>
-                        <h3 class="text-xl font-semibold text-gray-800">Social Media Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-2">Content performance:</p>
-                    <ul class="text-gray-600 text-sm space-y-1 pl-4">
-                        <li>• Post reach</li>
-                        <li>• Engagement rates</li>
-                        <li>• Campaign ROI</li>
-                        <li>• Audience demographics</li>
+                <div class="card">
+                    <h3>📣 Outreach Dashboard</h3>
+                    <ul>
+                        <li>Email open & click rates</li>
+                        <li>Outreach-to-close analytics</li>
+                        <li>Lead nurturing effectiveness</li>
                     </ul>
                 </div>
-                
-                <div class="bg-white p-6 rounded-xl shadow-sm hover:shadow-md transition-shadow">
-                    <div class="flex items-center mb-4">
-                        <span class="material-symbols-outlined bg-red-100 text-red-600 p-2 rounded-lg mr-4">language</span>
-                        <h3 class="text-xl font-semibold text-gray-800">Website Dashboard</h3>
-                    </div>
-                    <p class="text-gray-600 mb-2">Optimize UX:</p>
-                    <ul class="text-gray-600 text-sm space-y-1 pl-4">
-                        <li>• Traffic sources</li>
-                        <li>• Bounce rate</li>
-                        <li>• Load speed</li>
-                        <li>• Conversion paths</li>
+                <div class="card">
+                    <h3>📱 Social Media Dashboard</h3>
+                    <ul>
+                        <li>Post & story reach</li>
+                        <li>Engagement rates by platform</li>
+                        <li>Follower trends & demographics</li>
+                    </ul>
+                </div>
+                <div class="card">
+                    <h3>🌐 Website Dashboard</h3>
+                    <ul>
+                        <li>Site traffic & source breakdown</li>
+                        <li>Bounce rate & session duration</li>
+                        <li>Conversion paths & form submissions</li>
                     </ul>
                 </div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="max-w-4xl mx-auto">
-                <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">⚙️ Built With Integration in Mind</h2>
-                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
-                    <div class="bg-gray-100 p-4 rounded-lg flex items-center">
-                        <span class="material-symbols-outlined mr-3 text-gray-600">search</span>
-                        <span class="font-medium">Google Analytics 4</span>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg flex items-center">
-                        <span class="material-symbols-outlined mr-3 text-gray-600">ads_click</span>
-                        <span class="font-medium">Google Ads</span>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg flex items-center">
-                        <span class="material-symbols-outlined mr-3 text-gray-600">hub</span>
-                        <span class="font-medium">HubSpot, Salesforce</span>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg flex items-center">
-                        <span class="material-symbols-outlined mr-3 text-gray-600">thumb_up</span>
-                        <span class="font-medium">Meta Business Suite</span>
-                    </div>
-                    <div class="bg-gray-100 p-4 rounded-lg flex items-center">
-                        <span class="material-symbols-outlined mr-3 text-gray-600">shopping_cart</span>
-                        <span class="font-medium">Shopify, WooCommerce</span>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl p-8 max-w-4xl mx-auto">
-                <h3 class="text-2xl font-semibold text-center mb-4">🔐 Data-Driven. Secure. Scalable.</h3>
-                <p class="text-center text-gray-700 mb-8">Every dashboard is hosted on a secure cloud environment, backed by our business intelligence methodology, ensuring both performance and peace of mind.</p>
-                
-                <div class="text-center">
-                    <h4 class="text-xl font-semibold mb-4 text-indigo-700">💡 Why Choose Holistic Growth Marketing?</h4>
-                    <p class="text-gray-600 mb-8">We don't just deliver dashboards—we deliver insights that move businesses forward. Our SEO & business intelligence approach means every metric is tied back to ROI, visibility, and long-term growth.</p>
-                    
-                    <div class="flex flex-col sm:flex-row justify-center gap-4">
-                        <a href="#" class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center">
-                            <span class="material-symbols-outlined mr-2">calendar_today</span>
-                            Schedule My Demo
-                        </a>
-                        <a href="#" class="border border-indigo-600 text-indigo-600 hover:bg-indigo-50 font-medium py-3 px-6 rounded-lg transition-colors flex items-center justify-center">
-                            <span class="material-symbols-outlined mr-2">mail</span>
-                            Contact Our Team
-                        </a>
-                    </div>
-                </div>
+    <section class="section">
+        <div class="container">
+            <h2>Built With Integration in Mind</h2>
+            <div class="integrations">
+                <div class="integration-item">Google Analytics 4</div>
+                <div class="integration-item">Google Ads & Search Console</div>
+                <div class="integration-item">HubSpot</div>
+                <div class="integration-item">Salesforce</div>
+                <div class="integration-item">Zoho</div>
+                <div class="integration-item">Meta Business Suite</div>
+                <div class="integration-item">LinkedIn Ads</div>
+                <div class="integration-item">Shopify</div>
+                <div class="integration-item">WooCommerce</div>
+                <div class="integration-item">BigCommerce</div>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">🧩 Mermaid Visualizer for SEO & Strategy</h2>
-            <div class="max-w-4xl mx-auto text-gray-600">
-                <p class="mb-6">Mermaid Visualizer leverages <a href="https://mermaid.js.org/" target="_blank" class="text-indigo-600 hover:underline">Mermaid code</a>, a JavaScript-based tool, to create dynamic diagrams that simplify complex SEO and strategic planning processes. From keyword strategies to campaign timelines, visualize your marketing efforts with clarity.</p>
-                
-                <h3 class="text-xl font-semibold mb-4 text-gray-800">Why Use Mermaid for SEO?</h3>
-                <ul class="list-disc pl-6 mb-6 space-y-2">
-                    <li><strong>Keyword Mapping</strong>: Organize keyword clusters with mind maps to guide content creation.</li>
-                    <li><strong>Content Siloing</strong>: Flowcharts ensure optimal site architecture for SEO.</li>
-                    <li><strong>Technical Audits</strong>: Sequence diagrams track audit steps, ensuring thorough optimization.</li>
-                </ul>
-                <div class="mermaid-diagram">
-                    <div class="mermaid">
-                        graph TD;
-                            A[Keyword Strategy] --> B[Primary Keywords];
-                            A --> C[Secondary Keywords];
-                            B --> D[Content Creation];
-                            C --> E[Internal Linking];
-                            D --> F[SEO Performance];
-                            E --> F;
-                    </div>
-                </div>
-
-                <h3 class="text-xl font-semibold mb-4 text-gray-800">Strategic Planning with Mermaid</h3>
-                <ul class="list-disc pl-6 mb-6 space-y-2">
-                    <li><strong>Campaign Timelines</strong>: Gantt charts outline milestones and dependencies.</li>
-                    <li><strong>Workflow Optimization</strong>: Flowcharts identify inefficiencies in processes.</li>
-                    <li><strong>Goal Alignment</strong>: Mind maps connect objectives to actionable tactics.</li>
-                </ul>
-                <div class="mermaid-diagram">
-                    <div class="mermaid">
-                        gantt
-                            title Campaign Timeline
-                            dateFormat  YYYY-MM-DD
-                            section Campaign
-                            Keyword Research :a1, 2025-05-01, 7d
-                            Content Creation :a2, after a1, 14d
-                            Launch Campaign  :milestone, 2025-05-22
-                    </div>
-                </div>
-
-                <p class="mb-6">With Mermaid Visualizer, transform abstract strategies into actionable visuals, driving better SEO outcomes and strategic alignment.</p>
-                <div class="text-center">
-                    <a href="https://mermaid.js.org/" target="_blank" class="inline-flex items-center bg-indigo-600 hover:bg-indigo-700 text-white font-medium py-3 px-6 rounded-lg transition-colors">
-                        <span class="material-symbols-outlined mr-2">code</span>
-                        Explore Mermaid
-                    </a>
-                </div>
+    <section class="section">
+        <div class="container">
+            <h2>Ready to See Your Dashboard?</h2>
+            <div class="cta-buttons">
+                <a href="#demo" class="btn btn-primary">👉 Schedule My Demo</a>
+                <a href="#contact" class="btn btn-secondary">📩 Contact Our Team</a>
             </div>
         </div>
     </section>
 
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Interactive Demo Preview</h2>
-            <div class="max-w-5xl mx-auto">
-                <div class="react-tabs" data-tabs-demo>
-                    <div class="flex mb-4 overflow-x-auto pb-4 mb-6">
-                        <button data-tab="demo1" class="py-2 px-4 bg-indigo-600 text-white rounded-lg font-medium">Demo 1</button>
-                        <button data-tab="demo2" class="py-2 px-4 hover:bg-indigo-50 rounded font-medium whitespace-nowrap">Demo 2</button>
-                        <button data-tab="demo3" class="py-2 px-4 hover:bg-indigo-50 rounded font-medium whitespace-nowrap">Demo 3</button>
-                    </div>
-                    <div class="tab-content space-y-6">
-                        <div id="demo1" class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl p-8 min-h-[40vh]">
-                            <p class="text-center text-gray-600">Select demo to preview</p>
-                        </div>
-                        <div id="demo2" class="hidden">
-                            <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl p-8 min-h-[40vh]">
-                                <p class="text-center text-gray-600">Demo 2: Marketing Campaign Insights</p>
-                            </div>
-                        </div>
-                        <div id="demo3" class="hidden">
-                            <div class="bg-gradient-to-r from-indigo-50 to-blue-50 rounded-2xl p-8 min-h-[40vh]">
-                                <p class="text-center text-gray-600">Demo 3: SEO Performance Tracking</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-gray-100">
-        <div class="container mx-auto px-6">
-            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Testimonials</h2>
-            <div class="slider relative">
-                <div class="flex overflow-hidden">
-                    <div class="slider-track flex transition-transform duration-500 ease-in-out" style="transform: translateX(0)">
-                        <div class="slider-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
-                            <div class="bg-white p-6 rounded-xl shadow-sm">
-                                <div class="flex items-start mb-4">
-                                    <img src="https://via.placeholder.com/50" alt="Sarah Johnson" class="w-12 h-12 rounded-full mr-4 object-cover">
-                                    <div>
-                                        <h3 class="text-lg font-semibold">Sarah Johnson</h3>
-                                        <p class="text-gray-500">CEO: Marketing Insights Co.</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">Holistic Growth Marketing's dashboard transformed how we make decisions. We cut marketing costs by 30% while increasing lead volume by 45% in the first quarter.</p>
-                                <div class="flex items-center mt-4">
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
-                            <div class="bg-white p-6 rounded-xl shadow-sm">
-                                <div class="flex items-start mb-4">
-                                    <img src="https://via.placeholder.com/50" alt="Michael Lee" class="w-12 h-12 rounded-full mr-4 object-cover">
-                                    <div>
-                                        <h3 class="text-lg font-semibold">Michael Lee</h3>
-                                        <p class="text-gray-500">CMO: TechTrend Innovations</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">The Mermaid Visualizer made our SEO strategy crystal clear. We boosted organic traffic by 25% in just two months.</p>
-                                <div class="flex items-center mt-4">
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="slider-slide flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
-                            <div class="bg-white p-6 rounded-xl shadow-sm">
-                                <div class="flex items-start mb-4">
-                                    <img src="https://via.placeholder.com/50" alt="Emily Chen" class="w-12 h-12 rounded-full mr-4 object-cover">
-                                    <div>
-                                        <h3 class="text-lg font-semibold">Emily Chen</h3>
-                                        <p class="text-gray-500">Director: Growth Solutions</p>
-                                    </div>
-                                </div>
-                                <p class="text-gray-600">The campaign timelines in Mermaid Visualizer kept our team aligned, delivering projects 20% faster.</p>
-                                <div class="flex items-center mt-4">
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                    <span class="material-symbols-outlined text-amber-500">star</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <button class="slider-prev absolute -left-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow hover:bg-gray-700 disabled:opacity-50" aria-label="Previous">
-                    <span class="material-symbols-outlined">arrow_back_ios</span>
-                </button>
-                <button class="slider-next absolute -right-4 top-1/2 transform -translate-y-1/2 bg-gray-800 text-white p-2 rounded-full shadow hover:bg-gray-700 disabled:opacity-50" aria-label="Next">
-                    <span class="material-symbols-outlined">arrow_forward_ios</span>
-                </button>
-            </div>
-            <div class="text-center mt-12">
-                <button class="bg-indigo-600 hover:bg-indigo-700 text-white font-medium px-6 py-3 rounded-lg transition-colors">Sign Up for Free Trial</button>
-            </div>
-        </div>
-    </section>
-
-    <section class="py-16 bg-white">
-        <div class="container mx-auto px-6">
-            <div class="grid md:grid-cols-2 gap-12 items-center">
-                <div>
-                    <h2 class="text-2xl font-bold text-gray-800 mb-4">See It in <span class="text-indigo-600">Action</span></h2>
-                    <p class="text-gray-600 mb-8">Discover how our Mermaid Visualizer can transform your marketing decisions with this in-depth look at key features.</p>
-                    <ul class="space-y-4 mb-8">
-                        <li class="flex items-start">
-                            <span class="material-symbols-outlined text-indigo-600 mr-2">check_circle</span>
-                            <p class="text-gray-600">Real-time data visualization</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="material-symbols-outlined text-indigo-600 mr-2">check_circle</span>
-                            <p class="text-gray-600">Custom report generation</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="material-symbols-outlined text-indigo-600 mr-2">check_circle</span>
-                            <p class="text-gray-600">Automated KPI tracking</p>
-                        </li>
-                        <li class="flex items-start">
-                            <span class="material-symbols-outlined text-indigo-600 mr-2">check_circle</span>
-                            <p class="text-gray-600">Interactive Mermaid diagrams</p>
-                        </li>
-                    </ul>
-                    <a href="#" class="bg-indigo-600 hover:bg-indigo-700 px-6 py-3 rounded-lg inline-flex items-center font-bold transition-all">
-                        <span class="material-symbols-outlined mr-2">play_circle</span>
-                        Watch Demo Video
-                    </a>
-                </div>
-                <div class="hidden md:block">
-                    <img src="https://via.placeholder.com/500x300" alt="Dashboard Screenshot" class="rounded-xl shadow-2xl" loading="lazy">
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <footer class="bg-gray-800 text-gray-300 py-12">
-        <div class="container mx-auto px-6">
-            <div class="text-center">
-                <p class="mb-4">Unlock the insights your business needs to grow smarter with Mermaid Visualizer.</p>
-                <p class="text-sm">© 2025 Holistic Growth Marketing. All rights reserved.</p>
-            </div>
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Holistic Growth Marketing. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Initialize Mermaid
-        mermaid.initialize({ startOnLoad: true });
-
-        // Accessibility Widget
-        document.addEventListener('DOMContentLoaded', () => {
-            const widgetButton = document.getElementById('toggleA11y');
-            const panel = document.getElementById('a11yPanel');
-
-            widgetButton.addEventListener('click', (e) => {
-                panel.classList.toggle('hidden');
-                e.stopPropagation();
-            });
-
-            document.addEventListener('click', (e) => {
-                if (!panel.contains(e.target) && !widgetButton.contains(e.target)) {
-                    panel.classList.add('hidden');
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({ behavior: 'smooth' });
                 }
-            });
-
-            document.querySelectorAll('button[data-mode]').forEach((button) => {
-                button.addEventListener('click', () => {
-                    if (button.dataset.mode === 'grayscale') {
-                        document.documentElement.classList.toggle('grayscale');
-                    } else if (button.dataset.mode === 'highContrast') {
-                        document.body.classList.toggle('high-contrast');
-                    } else if (button.dataset.mode === 'textSize') {
-                        const slider = document.querySelector('input[type="range"]');
-                        document.documentElement.style.fontSize = `${slider.value}%`;
-                    }
-                });
-            });
-
-            const textSizeSlider = document.querySelector('input[type="range"]');
-            textSizeSlider.addEventListener('input', () => {
-                document.documentElement.style.fontSize = `${textSizeSlider.value}%`;
             });
         });
 
-        // Tab Functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const tabsContainer = document.querySelector('[data-tabs-demo]');
-            if (tabsContainer) {
-                const tabButtons = tabsContainer.querySelectorAll('[data-tab]');
-                const tabContents = tabsContainer.querySelectorAll('.tab-content > div');
-
-                tabButtons.forEach((button) => {
-                    button.addEventListener('click', () => {
-                        const tabId = button.dataset.tab;
-
-                        tabButtons.forEach((btn) => {
-                            btn.classList.remove('bg-indigo-600', 'text-white');
-                            btn.classList.add('hover:bg-indigo-50');
-                        });
-                        button.classList.add('bg-indigo-600', 'text-white');
-                        button.classList.remove('hover:bg-indigo-50');
-
-                        tabContents.forEach((content) => {
-                            content.classList.add('hidden');
-                        });
-
-                        document.getElementById(tabId).classList.remove('hidden');
-                    });
-                });
-            }
-        });
-
-        // Slider Functionality
-        document.addEventListener('DOMContentLoaded', () => {
-            const sliderTrack = document.querySelector('.slider-track');
-            const slides = document.querySelectorAll('.slider-slide');
-            const prevButton = document.querySelector('.slider-prev');
-            const nextButton = document.querySelector('.slider-next');
-            let currentIndex = 0;
-            const slideWidth = slides[0].offsetWidth;
-
-            const updateSlider = () => {
-                sliderTrack.style.transform = `translateX(-${currentIndex * slideWidth}px)`;
-                prevButton.disabled = currentIndex === 0;
-                nextButton.disabled = currentIndex === slides.length - 1;
-            };
-
-            prevButton.addEventListener('click', () => {
-                if (currentIndex > 0) {
-                    currentIndex--;
-                    updateSlider();
+        // Add animation on scroll
+        const cards = document.querySelectorAll('.card');
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
                 }
             });
+        }, { threshold: 0.2 });
 
-            nextButton.addEventListener('click', () => {
-                if (currentIndex < slides.length - 1) {
-                    currentIndex++;
-                    updateSlider();
-                }
-            });
-
-            window.addEventListener('resize', () => {
-                updateSlider();
-            });
-
-            updateSlider();
+        cards.forEach(card => {
+            card.style.opacity = 0;
+            card.style.transform = 'translateY(20px)';
+            card.style.transition = 'all 0.5s ease';
+            observer.observe(card);
         });
     </script>
-</body>
-</html>
+</div>
